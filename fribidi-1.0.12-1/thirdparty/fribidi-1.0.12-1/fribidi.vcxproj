@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\bidi-types.h" />
+    <ClInclude Include="include\common.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\debug.h" />
+    <ClInclude Include="include\fribidi-arabic.h" />
+    <ClInclude Include="include\fribidi-begindecls.h" />
+    <ClInclude Include="include\fribidi-bidi-types-list.h" />
+    <ClInclude Include="include\fribidi-bidi-types.h" />
+    <ClInclude Include="include\fribidi-bidi.h" />
+    <ClInclude Include="include\fribidi-char-sets-cap-rtl.h" />
+    <ClInclude Include="include\fribidi-char-sets-cp1255.h" />
+    <ClInclude Include="include\fribidi-char-sets-cp1256.h" />
+    <ClInclude Include="include\fribidi-char-sets-iso8859-6.h" />
+    <ClInclude Include="include\fribidi-char-sets-iso8859-8.h" />
+    <ClInclude Include="include\fribidi-char-sets-list.h" />
+    <ClInclude Include="include\fribidi-char-sets-utf8.h" />
+    <ClInclude Include="include\fribidi-char-sets.h" />
+    <ClInclude Include="include\fribidi-common.h" />
+    <ClInclude Include="include\fribidi-config.h" />
+    <ClInclude Include="include\fribidi-deprecated.h" />
+    <ClInclude Include="include\fribidi-enddecls.h" />
+    <ClInclude Include="include\fribidi-flags.h" />
+    <ClInclude Include="include\fribidi-joining-types-list.h" />
+    <ClInclude Include="include\fribidi-joining-types.h" />
+    <ClInclude Include="include\fribidi-joining.h" />
+    <ClInclude Include="include\fribidi-mirroring.h" />
+    <ClInclude Include="include\fribidi-shape.h" />
+    <ClInclude Include="include\fribidi-types.h" />
+    <ClInclude Include="include\fribidi-unicode-version.h" />
+    <ClInclude Include="include\fribidi-unicode.h" />
+    <ClInclude Include="include\fribidi.h" />
+    <ClInclude Include="include\joining-types.h" />
+    <ClInclude Include="include\mem.h" />
+    <ClInclude Include="include\run.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\arabic-misc.tab.i" />
+    <None Include="include\arabic-shaping.tab.i" />
+    <None Include="include\bidi-type.tab.i" />
+    <None Include="include\joining-type.tab.i" />
+    <None Include="include\mirroring.tab.i" />
+    <None Include="src\fribidi.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fribidi-arabic.c" />
+    <ClCompile Include="src\fribidi-bidi-types.c" />
+    <ClCompile Include="src\fribidi-bidi.c" />
+    <ClCompile Include="src\fribidi-brackets.c" />
+    <ClCompile Include="src\fribidi-char-sets-cap-rtl.c" />
+    <ClCompile Include="src\fribidi-char-sets-cp1255.c" />
+    <ClCompile Include="src\fribidi-char-sets-cp1256.c" />
+    <ClCompile Include="src\fribidi-char-sets-iso8859-6.c" />
+    <ClCompile Include="src\fribidi-char-sets-iso8859-8.c" />
+    <ClCompile Include="src\fribidi-char-sets-utf8.c" />
+    <ClCompile Include="src\fribidi-char-sets.c" />
+    <ClCompile Include="src\fribidi-deprecated.c" />
+    <ClCompile Include="src\fribidi-joining-types.c" />
+    <ClCompile Include="src\fribidi-joining.c" />
+    <ClCompile Include="src\fribidi-mirroring.c" />
+    <ClCompile Include="src\fribidi-run.c" />
+    <ClCompile Include="src\fribidi-shape.c" />
+    <ClCompile Include="src\fribidi.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticlibtemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FRIBIDI_BUILD;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;include\charset</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>fribidi.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FRIBIDI_BUILD;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;include\charset</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>fribidi.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

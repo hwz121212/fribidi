@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{42D9DA4F-4E4D-4228-BB1E-C22592BB97D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfribidi", "thirdparty\fribidi-1.0.12-1\libfribidi.vcxproj", "{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fribidi", "thirdparty\fribidi-1.0.12-1\fribidi.vcxproj", "{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{63720114-B7BB-4E16-8214-5C9F61C028AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gen.tab", "gen.tab", "{798A059D-391A-44DB-BF36-903715022EAF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-arabic-shaping-tab", "demo\gen.tab\gen-arabic-shaping-tab.vcxproj", "{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-bidi-type-tab", "demo\gen.tab\gen-bidi-type-tab.vcxproj", "{4CE4751A-89C0-4338-A1B7-65A031C1A280}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-joining-type-tab", "demo\gen.tab\gen-joining-type-tab.vcxproj", "{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-mirroring-tab", "demo\gen.tab\gen-mirroring-tab.vcxproj", "{1653A696-7CA6-475A-8804-3CE9DC0F8B55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-unicode-version", "demo\gen.tab\gen-unicode-version.vcxproj", "{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {A78DCBC4-077B-4884-A7F4-D9AF70EDB538}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.ActiveCfg = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Debug|x64.Build.0 = Debug|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.ActiveCfg = Release|x64
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}.Release|x64.Build.0 = Release|x64
+		{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}.Debug|x64.ActiveCfg = Debug|x64
+		{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}.Debug|x64.Build.0 = Debug|x64
+		{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}.Release|x64.ActiveCfg = Release|x64
+		{55BA3941-DC6F-46C6-8C5A-1DCA87E72093}.Release|x64.Build.0 = Release|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Debug|x64.ActiveCfg = Debug|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Debug|x64.Build.0 = Debug|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Release|x64.ActiveCfg = Release|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Release|x64.Build.0 = Release|x64
+		{4CE4751A-89C0-4338-A1B7-65A031C1A280}.Debug|x64.ActiveCfg = Debug|x64
+		{4CE4751A-89C0-4338-A1B7-65A031C1A280}.Debug|x64.Build.0 = Debug|x64
+		{4CE4751A-89C0-4338-A1B7-65A031C1A280}.Release|x64.ActiveCfg = Release|x64
+		{4CE4751A-89C0-4338-A1B7-65A031C1A280}.Release|x64.Build.0 = Release|x64
+		{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5}.Debug|x64.ActiveCfg = Debug|x64
+		{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5}.Debug|x64.Build.0 = Debug|x64
+		{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5}.Release|x64.ActiveCfg = Release|x64
+		{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5}.Release|x64.Build.0 = Release|x64
+		{1653A696-7CA6-475A-8804-3CE9DC0F8B55}.Debug|x64.ActiveCfg = Debug|x64
+		{1653A696-7CA6-475A-8804-3CE9DC0F8B55}.Debug|x64.Build.0 = Debug|x64
+		{1653A696-7CA6-475A-8804-3CE9DC0F8B55}.Release|x64.ActiveCfg = Release|x64
+		{1653A696-7CA6-475A-8804-3CE9DC0F8B55}.Release|x64.Build.0 = Release|x64
+		{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712}.Debug|x64.ActiveCfg = Debug|x64
+		{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712}.Debug|x64.Build.0 = Debug|x64
+		{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712}.Release|x64.ActiveCfg = Release|x64
+		{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A78DCBC4-077B-4884-A7F4-D9AF70EDB538} = {42D9DA4F-4E4D-4228-BB1E-C22592BB97D0}
+		{55BA3941-DC6F-46C6-8C5A-1DCA87E72093} = {42D9DA4F-4E4D-4228-BB1E-C22592BB97D0}
+		{798A059D-391A-44DB-BF36-903715022EAF} = {63720114-B7BB-4E16-8214-5C9F61C028AB}
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C} = {798A059D-391A-44DB-BF36-903715022EAF}
+		{4CE4751A-89C0-4338-A1B7-65A031C1A280} = {798A059D-391A-44DB-BF36-903715022EAF}
+		{F7E85F0D-CF25-4B18-A9A2-A3366EA393D5} = {798A059D-391A-44DB-BF36-903715022EAF}
+		{1653A696-7CA6-475A-8804-3CE9DC0F8B55} = {798A059D-391A-44DB-BF36-903715022EAF}
+		{CD5F7F9A-88A0-40DE-BA51-80F7CE12E712} = {798A059D-391A-44DB-BF36-903715022EAF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
